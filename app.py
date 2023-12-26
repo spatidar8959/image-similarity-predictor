@@ -1,3 +1,9 @@
+# First install these dependencies in your terminal
+# !pip install git+https://github.com/openai/CLIP.git
+# !pip install open_clip_torch
+# !pip install sentence_transformers
+
+# Now install all the libraries that are given below
 from flask import Flask, request, jsonify
 from PIL import Image
 import matplotlib.image as mpimg
@@ -6,6 +12,7 @@ from sentence_transformers import util
 import open_clip
 from io import BytesIO
 
+# Now run the Flask App 
 app = Flask(__name__)
 
 # image processing model
