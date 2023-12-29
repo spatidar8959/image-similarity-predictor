@@ -1,9 +1,3 @@
-# First install these dependencies in your terminal
-# !pip install git+https://github.com/openai/CLIP.git
-# !pip install open_clip_torch
-# !pip install sentence_transformers
-
-# Now install all the libraries that are given below
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from PIL import Image
@@ -88,4 +82,3 @@ def show_images():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
